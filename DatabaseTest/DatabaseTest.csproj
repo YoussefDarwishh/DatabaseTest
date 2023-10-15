@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RootNamespace>Database_Test</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="7.0.6" />
+    <PackageReference Include="SD.LLBLGen.Pro.DQE.PostgreSql" Version="5.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Code\DatabaseGeneric\FavMovies.csproj" />
+    <ProjectReference Include="..\Data\Code\DatabaseSpecific\FavMoviesDBSpecific.csproj" />
+  </ItemGroup>
+
+</Project>
